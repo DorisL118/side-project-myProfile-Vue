@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <NavBar />
+    <HeaderSection />
+    <MeSection />
+    <SkillsSection />
+    <ProjectsSection />
+    <ContactSection />
+    <FooterSection />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue';
+import HeaderSection from './components/HeaderSection.vue';
+import MeSection from './components/MeSection.vue';
+import SkillsSection from './components/SkillsSection.vue';
+import ProjectsSection from './components/ProjectsSection.vue';
+import ContactSection from './components/ContactSection.vue';
+import FooterSection from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    HeaderSection,
+    MeSection,
+    SkillsSection,
+    ProjectsSection,
+    ContactSection,
+    FooterSection
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/css/style.css" lang="css"></style>
+
